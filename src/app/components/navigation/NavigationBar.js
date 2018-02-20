@@ -68,8 +68,7 @@ export default class NavigationBar extends React.Component {
                   Academy
                   </Link>
                 }
-                iconElementRight={<IconButton><ShortText /></IconButton>}
-                iconElementRightStyle={{color:'black'}}
+                iconElementRight={<IconButton><ShortText color={"black"} /></IconButton>}
                 showMenuIconButton={false}
                 onRightIconButtonClick={this.handleToggle.bind(this)}
             />
