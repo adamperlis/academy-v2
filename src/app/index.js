@@ -2,15 +2,13 @@
 
 import React                from 'react';
 import {render}             from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Reboot from 'material-ui/Reboot';
 import injectTpEventPlugin  from 'react-tap-event-plugin';
 import { AppContainer }     from 'react-hot-loader';
 import smoothScrollPolyfill from 'smoothscroll-polyfill';
 import 'animate.css';
 // import 'jquery';
 // import 'font-awesome/css/font-awesome.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
 import './style/index.scss';
 import Root from './Root';
 
@@ -26,13 +24,13 @@ injectTpEventPlugin();
 
 const renderApp = RootComponent => {
   render(
-    <MuiThemeProvider>
+    <div>
+    <Reboot />
       <AppContainer
         warnings={false}
       >
         <RootComponent />
-    </AppContainer>
-    </MuiThemeProvider>,
+    </AppContainer></div>,
     BootstrapedElement
   );
 };
