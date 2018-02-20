@@ -9,15 +9,11 @@ import { Link }       from 'react-router-dom';
 import {Jumbotron}    from '../../components';
 import AnimatedView   from '../../components/animatedView/AnimatedView';
 import styles         from './home.scss';
-import { withStyles } from 'material-ui/styles';
-import Paper from 'material-ui/Paper';
-import Grid from 'material-ui/Grid';
 
 // IMPORTANT: we need to bind classnames to CSSModule generated classes:
 // const cx = classnames.bind(styles);
 
 class Home extends PureComponent {
-
   static propTypes= {
     // react-router 4:
     match:    PropTypes.object.isRequired,
@@ -44,12 +40,39 @@ class Home extends PureComponent {
     return(
       <AnimatedView>
         <Jumbotron>
-        <Grid item xs={6} sm={6}>
-          xs=12 sm=6
-        </Grid>
-        <Grid item xs={6} sm={6}>
-          xs=12 sm=6
-        </Grid>
+          <div
+            className={styles.homeInfo}
+          >
+            <h1
+              className={styles.mainTitle}
+            >
+              ReactJS 16 + Redux + Bootstrap
+            </h1>
+            <h2>
+              with Hot Reload (<i>react-hot-loader 3.1+</i>)!!!
+            </h2>
+            <h2>
+              and React Router v4
+            </h2>
+            <h2>
+              and webpack 3.x
+            </h2>
+            <h2>
+              and CSSModule (<i className={styles.lightNote}>so keep using SCSS as you did before but import your class in your components like it were JS files</i>)
+            </h2>
+            <h1>
+              Starter
+            </h1>
+            <p>
+              <Link
+                className="btn btn-success btn-lg"
+                to={'/about'}>
+                <i className="fa fa-info" />
+                &nbsp;
+                go to about
+              </Link>
+            </p>
+          </div>
         </Jumbotron>
       </AnimatedView>
     );

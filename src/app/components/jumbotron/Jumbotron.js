@@ -1,39 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from 'material-ui/styles';
-import Paper from 'material-ui/Paper';
-import Grid from 'material-ui/Grid';
+// @flow weak
 
-const styles = theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-});
+import React              from 'react';
+import PropTypes          from 'prop-types';
 
 const Jumbotron = (props) => {
-
-  const { classes } = props;
-
   return (
-    <div className={classes.root}>
-      <Grid container spacing={24}>
-        <Grid item xs={12}>
-
-          {props.children}
-        </Grid>
-      </Grid>
+    <div className="jumbotron">
+      {props.children}
     </div>
   );
 };
 
 Jumbotron.propTypes = {
-  classes: PropTypes.object.isRequired,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
-export default withStyles(styles)(Jumbotron);
+export default Jumbotron;
