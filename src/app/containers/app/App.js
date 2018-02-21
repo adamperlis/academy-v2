@@ -11,6 +11,7 @@ import {
 }                             from '../../components';
 import navigationModel        from '../../config/navigation.json';
 import MainRoutes             from '../../routes/MainRoutes';
+import styles                 from './app.scss';
 
 class App extends Component {
   static propTypes = {
@@ -32,9 +33,9 @@ class App extends Component {
     const { navModel } = this.state;
 
     return (
-      <div id="appContainer">
+      <div id="appContainer" className={styles.appContainer}>
         <NavigationBar />
-        <div className="container-fluid">
+        <div>
           <MainRoutes />
         </div>
         <BackToTop

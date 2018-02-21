@@ -1,0 +1,33 @@
+.vwrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100%;
+}
+
+.vrow{
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.carouselSmall{
+  background-image: linear-gradient(to right, #c3d4cc, #bccdc5);;
+  flex: 1 0 auto;
+}
+
+.carouselLarge{
+  background-image: linear-gradient(to right, #c3d4cc, #bccdc5);
+  clip-path: polygon(100% 90%, 100% 100%, 60% 100%, 60% 90%, 0% 90%, 0% 0%, 100% 0%, 100% 90%);
+  flex: 1 0 auto;
+}
+
+.vcol{
+  flex: 1 0 auto;
+}
+
+.flex{
+  display: flex;
+}

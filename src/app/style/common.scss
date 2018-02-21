@@ -1,6 +1,11 @@
 @import "./_vars.scss";
 @import "./_mixins.scss";
 
+html, body, #appContainer, #root, section{
+    height: 100%;
+    margin: 0px;
+}
+
 .containersCustom {
   padding-left: $CONTAINER_CUSTOM_PADDING_LEFT;
   padding-right: $CONTAINER_CUSTOM_PADDING_RIGHT;

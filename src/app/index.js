@@ -8,9 +8,8 @@ import { AppContainer }     from 'react-hot-loader';
 import smoothScrollPolyfill from 'smoothscroll-polyfill';
 import 'animate.css';
 // import 'jquery';
-// import 'font-awesome/css/font-awesome.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+// import 'font-awesome/css/font-awesome.min.css';s
+import 'bootstrap/dist/css/bootstrap.css';
 import './style/index.scss';
 import Root from './Root';
 
