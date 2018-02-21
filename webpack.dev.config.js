@@ -59,13 +59,19 @@ const config = {
             use: [
               {loader: 'css-loader', options: { importLoaders: 1 }},
               'postcss-loader'
-            ]
+            ],
+            exclude: /flexboxgrid/
           })
           : [
             'style-loader',
             {loader: 'css-loader', options: { importLoaders: 1 }},
             'postcss-loader'
           ]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader?modules',
+        include: /flexboxgrid/
       },
       {
         test: /\.scss$/,

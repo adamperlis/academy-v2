@@ -45,7 +45,7 @@ React 16 + React-Router 4 + Redux + Bootstrap + Webpack 3 with Hot Reload and re
 
 ## Breaking changes since v2.2.0
 - `cross-env` added so no more particular windows command
-- serve dev and prod bundles 
+- serve dev and prod bundles
  - `npm run serve-dev`: with server hot reload (*uses nodemon*)
  - `npm run serve-prod`: production like node-express server
 

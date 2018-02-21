@@ -2,11 +2,16 @@
 
 import React              from 'react';
 import PropTypes          from 'prop-types';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 const Jumbotron = (props) => {
   return (
-    <div className="jumbotron">
-      {props.children}
+    <div>
+      <Grid fluid>
+      <Row middle="xs">
+          {props.children}
+      </Row>
+      </Grid>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="490px" height="880px" viewBox="0 0 490 880" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="46.546972%" x2="100%" y2="46.5469718%" id="linearGradient-1">
+            <stop stop-color="#C3D4CC" offset="0%"></stop>
+            <stop stop-color="#BCCDC5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Academy---Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-950.000000, 0.000000)">
+        <g id="Group-17" transform="translate(669.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <path d="M771,804 L771,880 L547,880 L547,805 L281,805 L281,0 L771,0 L771,804 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

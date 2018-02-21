@@ -33,7 +33,8 @@ const config = {
           'style-loader',
           {loader: 'css-loader', options: { importLoaders: 1 }},
           'postcss-loader'
-        ]
+        ],
+        exclude: /flexboxgrid/
       },
       {
         test:  /\.scss$/,
@@ -51,6 +52,11 @@ const config = {
           'sass-loader',
           'postcss-loader'
         ]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader?modules',
+        include: /flexboxgrid/
       },
       {
         test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif)(\?\S*)?$/,
