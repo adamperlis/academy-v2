@@ -15,17 +15,20 @@
 
 .carouselSmall{
   background-image: linear-gradient(to right, #c3d4cc, #bccdc5);;
-  flex: 1 0 auto;
+  height:729px;
 }
 
 .carouselLarge{
   background-image: linear-gradient(to right, #c3d4cc, #bccdc5);
-  clip-path: polygon(100% 90%, 100% 100%, 60% 100%, 60% 90%, 0% 90%, 0% 0%, 100% 0%, 100% 90%);
-  flex: 1 0 auto;
+  clip-path:polygon(100% 90%, 100% 100%, 40% 100%, 40% 90%, 0% 90%, 0% 0%, 100% 0%, 100% 90%);
+  height:810px;
 }
 
 .vcol{
-  flex: 1 0 auto;
+  display: flex;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .flex{
