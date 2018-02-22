@@ -12,8 +12,10 @@ const Jumbotron = (props) => {
       <Row noGutters className={styles.vrow}>
       <Col xs="12" md="5" className={styles.vcol}>
         <Row className="align-items-center">
-          <Col xs="12" md="12">
-              <p>Think Better, Build Better with UX & Design Thinking</p>
+          <Col xs="1" md="1"></Col>
+          <Col xs="10" md="10">
+              <h1>Think Better, Build Better</h1><br></br><h2>with UX & Design Thinking</h2>
+              <p>We are Designers, Developers. Product Managers, Researchers and Consultants devoted to creating human-centered digital experiences for our clients. We offer end-to-end Research, Design, Development & Analytics as well as Trainings for teams.</p>
           </Col>
         </Row>
       </Col>

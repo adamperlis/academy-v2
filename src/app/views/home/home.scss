@@ -1,6 +1,7 @@
 /*  IPORTANT: Comment this way  and not JS way: "//" */
 
-
+@import "../../style/_vars.scss";
+@import "../../style/_mixins.scss";
 /*  better naming with camelCase than kebab-case */
 
 .homeInfo {
@@ -15,13 +16,35 @@
 
 .navCards{
   background:#f7f7f7;
-  height:302.5px;
+  height:100%;
+  flex-direction: row;
+  display: flex;
 }
 
-.card {
-  width: 173.5px;
-  height: 205.5px;
-  border-radius: 2px;
-  background-color: #ffffff;
-  border: solid 0.5px #e7e7e7;
+.borderRight{
+  border-right: solid 0.5px $LIGHT_GRAY;
+}
+
+.sectionDividerWhite {
+  background: $WHITE;
+}
+
+
+.sectionDividerLightGray {
+  background: $LIGHT_GRAY;;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p, h1, h2, a{
+    text-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: flex;
+  }
 }
