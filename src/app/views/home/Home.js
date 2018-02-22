@@ -41,6 +41,27 @@ class Home extends PureComponent {
     return(
       <AnimatedView>
         <Jumbotron />
+
+        <Container fluid>
+
+          <Row>
+            <Col xs="11" md="11" className={styles.navCards}>
+              <Col xs="3" md="3">
+                <div className={styles.card}></div>
+              </Col>
+              <Col xs="3" md="3">
+                <div className={styles.card}></div>
+              </Col>
+              <Col xs="3" md="3">
+                <div className={styles.card}></div>
+              </Col>
+            </Col>
+            <Col xs="1" md="1">
+            </Col>
+          </Row>
+
+        </Container>
+
       </AnimatedView>
     );
   }

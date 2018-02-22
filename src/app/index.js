@@ -10,7 +10,7 @@ import 'animate.css';
 // import 'jquery';
 // import 'font-awesome/css/font-awesome.min.css';s
 import 'bootstrap/dist/css/bootstrap.css';
-import styles from './style/index.scss';
+import './style/index.scss';
 import Root from './Root';
 
 // smoothscroll polyfill
@@ -29,7 +29,7 @@ const renderApp = RootComponent => {
       <AppContainer
         warnings={false}
       >
-        <RootComponent className={styles.root} />
+        <RootComponent />
     </AppContainer>
     </MuiThemeProvider>,
     BootstrapedElement
