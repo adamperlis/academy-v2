@@ -1,0 +1,11 @@
+@import "../../style/_vars.scss";
+@import "../../style/_mixins.scss";
+
+.card {
+  width: 589px;
+  height: 264px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 0.5px $LIGHT_GRAY;
+  margin: 50px 0px 50px 0px;
+}

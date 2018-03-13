@@ -6,9 +6,14 @@ import React, {
 import PropTypes      from 'prop-types';
 import { Link }       from 'react-router-dom';
 // import classnames     from 'classnames/bind';
-import {Jumbotron, Card}    from '../../components';
-import AnimatedView   from '../../components/animatedView/AnimatedView';
-import styles         from './home.scss';
+import {
+  Jumbotron,
+  Card,
+  WorkshopCard,
+  NewsCard
+}                              from '../../components';
+import AnimatedView            from '../../components/animatedView/AnimatedView';
+import styles                  from './home.scss';
 import { Container, Row, Col } from 'reactstrap';
 
 // IMPORTANT: we need to bind classnames to CSSModule generated classes:
@@ -100,13 +105,12 @@ class Home extends PureComponent {
             <Col xs="1" md="1"></Col>
             <Col xs="3" md="3">
               <h1>Consulting,</h1><br></br><h2>Learning, & Doing</h2>
-              <p>We provide a range of consulting opportunities that are custom fit to your organization. Whether thats providing expertise in UX/UI Design, Research, Prototyping, Testing, Development, Product Management, and Analytics or training your teams with our Workshops and Bootcamps. We work right along side you acting as an extension to your internal team.</p>
-
               <Link
                 className="link"
                 to={'#'}>
                 See More
               </Link>
+              <h6>PROUD PARTNERS OF <img /><img /></h6>
 
             </Col>
             <Col xs="1" md="1"></Col>
@@ -142,7 +146,46 @@ class Home extends PureComponent {
             <Col xs="1" md="1"></Col>
           </Row>
 
+          <Row>
+            <Col xs="12" md="9"></Col>
+            <Col xs="12" md="2"><h1>Upcoming</h1><br></br><h2>Workshops</h2></Col>
+            <Col xs="12" md="1"></Col>
+          </Row>
+          <Row>
+            <Col xs="12" md="1"></Col>
+            <Col xs="12" md="5">
+              <WorkshopCard title="Design Sprint Workshop" month="February" day="4" description="In this jam-packed workshop, you’ll learn and master the tools, techniques, and framework used by teams at Google Ventures, Slack, Uber, and more, to facilitate breakthrough ideas, solve challenges, and validate solutions." />
+            </Col>
+            <Col xs="12" md="5">
+              <WorkshopCard title="Design Sprint Workshop" month="March" day="20" description="In this jam-packed workshop, you’ll learn and master the tools, techniques, and framework used by teams at Google Ventures, Slack, Uber, and more, to facilitate breakthrough ideas, solve challenges, and validate solutions." />
+            </Col>
+            <Col xs="12" md="1"></Col>
+          </Row>
 
+          <Row>
+            <Col xs="12" md="1"></Col>
+            <Col xs="12" md="2"><h1>Blog/</h1><br></br><h2>Press</h2></Col>
+            <Col xs="12" md="9"></Col>
+          </Row>
+          <Row>
+            <Col xs="12" md="1"></Col>
+            <Col xs="12" md="3">
+              <NewsCard title="Product Relays™" description="Product Relays are a framework that combines Design Sprints with a Modified Agile Sprints helping teams collaborate and work more efficiently together." />
+            </Col>
+            <Col xs="12" md="3">
+              <NewsCard title="Time waits for no-one" description="See the feature writtne about our CEO, Adam Perlis for Tech Open Air’s publication TOA.life.. He addresses questions on UX, Career and Happiness." />
+            </Col>
+            <Col xs="12" md="3">
+              <NewsCard title="SXSW 2017" description="See our CEO, Adam Perlis speaking on Design Sprint and How to Transform Your Organization at SXSW." />
+            </Col>
+            <Col xs="12" md="2">
+              <Link
+                className="link"
+                to="#">
+                See More
+              </Link>
+            </Col>
+          </Row>
 
         </Container>
       </AnimatedView>

@@ -7,7 +7,8 @@ import PropTypes              from 'prop-types';
 import {
   top,
   BackToTop,
-  NavigationBar
+  NavigationBar,
+  Footer
 }                             from '../../components';
 import navigationModel        from '../../config/navigation.json';
 import MainRoutes             from '../../routes/MainRoutes';
@@ -42,6 +43,7 @@ class App extends Component {
           minScrollY={40}
           scrollTo={'appContainer'}
         />
+        <Footer />
       </div>
     );
   }

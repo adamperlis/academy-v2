@@ -1,0 +1,6 @@
+@import "../../style/_vars.scss";
+@import "../../style/_mixins.scss";
+
+.newscard {
+  border-right: solid 1px $LIGHT_GRAY;
+}

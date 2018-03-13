@@ -85,7 +85,7 @@
     "babel-register": "^6.26.0",
     "chai": "^3.5.0",
     "coveralls": "^2.11.15",
-    "cross-env": "^5.0.3",
+    "cross-env": "^5.1.4",
     "css-loader": "^0.26.4",
     "css-module-flow": "^1.0.0",
     "dirty-chai": "^1.2.2",
